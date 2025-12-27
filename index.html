@@ -3,138 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
+    <!-- Heading/Navigation -->
+    <header> 
         <div class="container">
-            <h1>SaiKarthik</h1>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#education">Education</a> 
-                <a href="#skills">Skills</a> 
-                <a href="#projects">Projects</a> 
-                <a href="#contact">Contact</a>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="#">SK <span>.</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li> 
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li> 
+                    <li><a href="#contact" class="btn-link">Hire Me</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero-landing">
+        <div class="container hero-wrapper">
+            <div class="hero-info">
+                <h1>I Build <span class="gradient-text">Scalable</span>& Beautiful Web Apps</h1>
+                <p>I'm <strong>SaiKarthik</strong>, a ServiceNow Developer specializing in crafting high-performance digital experience. I turn complex problem into elegant, responsive designs.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary">Explore My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-outline">Let's Talk</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>10+</strong><span>Projects</span></div>
+                    <div class="stat-item"><strong>100%</strong><span>Responsive</span></div>
+                    <div class="stat-item"><strong>2023</strong><span>Graduate</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="card-stack">
+                    <div class="card card-1"></div>
+                    <div class="card card-2"></div>
+                    <div class="main-profile-card">
+                        <img src="project 2.jpg" alt="Profile Pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section about-modern">
+        <div class="container about-wrapper">
+            <div class="about-content">
+                <h2 class="section-heading">About Me</h2>
+                <p class="lead">Computer Science Engineer with a deep fascination for the inersection of logic and design.</p>
+                <p>I discovered that coding isn't just about syntax-it's about solving problems and creating seamless experience. I specialize in front-end technologies and enjoy turing complex wireframes into interactive realities.</p>
+                <div class="about-info-grid">
+                    <div class="info-item"><i class="fas fa-graduation-cap"></i><div><strong>Education</strong><span> B.Tech in CSE</span></div></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><strong>Location</strong><span> Vizag, India</span></div></div>
+                </div>
+            </div>
+            <div class="about-attributes">
+                <div class="attribute-card"><h3>01. Clean Code</h3><p>Maintainable, readable code that scales.</p></div>
+                <div class="attribute-card"><h3>02. Responsive Design</h3><p>Perfect on every screen size.</p></div> 
+                <div class="attribute-card"><h3>03. Performance</h3><p>Optimized assests and fast loading speeds.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-modern">
         <div class="container">
-            <img src="" alt="Profile Image">
-            <div class="container hero-content">
-                <h2>Web Developer</h2> 
-                <p>I build clean, responsive websites using HTML & CSS</p>
-                <a href="#contact" class="btn">Hire Me</a>
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <div class="category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">JavaScript (ES6+)</span>
+                        <span class="skill-pill">React.js</span>
+                        <span class="skill-pill">Angular</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-icon"><i class=""></i></div>
+                    <h3>Styling & Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">Bootstrap 5</span>
+                        <span class="skill-pill">Tailwind CSS</span>
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">UI Animations</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">GitHub</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Netlify</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Languages & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">R</span>
+                        <span class="skill-pill">Numpy</span>
+                        <span class="skill-pill">Pandas</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <div class="category-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Visualization & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-pill">Seaborn</span>
+                        <span class="skill-pill">Matplotlib</span>
+                        <span class="skill-pill">Excel</span>
+                        <span class="skill-pill">Power BI</span>
+                        <span class="skill-pill">Tableau</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section about">
+    <!-- Projects -->
+    <section id="projects" class="section projects-modern">
         <div class="container">
-            <h2>About Me</h2> 
-            <p>I am a Computer Science graduate passionate about front-end development. I enjoy building user-friendly and visually appealing websites.</p>
-        </div>
-    </section>
-
-    <section id="education" class="section education">
-        <div class="container"> 
-            <h2>Educational Background</h2> 
-
-            <div class="edu-card">
-                <h3>B.Tech - Computer Science Engineering</h3> 
-                <p>GITAM University, Vizag</p> 
-                <span>2019 - 2023</span>
-            </div>
-            <div class="edu-card">
-                <h3>Intermediate</h3> 
-                <p>MPC Stream</p> 
-                <span>2017 - 2019</span>
-            </div>
-            <div class="edu-card">
-                <h3>SSC</h3> 
-                <p>State Board</p> 
-                <span>2016 - 2017</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section skills">
-        <div class="container"> 
-            <h2>Skills</h2> 
-
-            <div class="skill">
-                <h3>HTML</h3> 
-                <div class="bar"><span class="html"></span></div>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="bar"><span class="css"></span></div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="bar"><span class="js"></span></div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="projects" class="section projects">
-        <div class="container"> 
-            <h2>Projects</h2>
-            <div class="projects">
+            <h2 class="section-title">Project Works</h2>
+            <div class="project-grid">
                 <div class="project-card">
-                    <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Landing Page">
-                    <h4>Landing Page</h4> 
-                    <p>Modern responsive landing page.</p>
+                    <div class="project-image">
+                        <img src="project 2.jpg" alt="project-1">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                            <span class="category">Web Page</span>
+                            <h3>Modern Portfolio UI</h3>
+                            <div class="tech-stack"><span>HTML5</span><span>CSS Grid</span></div>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/project 2.jpg" alt="Portfolio Website">
-                    <h4>Portfolio Website</h4>
-                    <p>Personal portfolio using HTML & CSS.</p>
+                    <div class="project-image">
+                        <img src="project 2.jpg" alt="project-1">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                            <span class="category">Data Analytics</span>
+                            <h3>Sales Data Analysis</h3>
+                            <div class="tech-stack"><span>Python</span><span>SQL</span><span>Power BI</span></div>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <img src="images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="business website">
-                    <h4>Business Website</h4> 
-                    <p>Professional business layout.</p>
+                    <div class="project-image">
+                        <img src="project 2.jpg" alt="project-1">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="overlay-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                            <span class="category">Power BI</span>
+                            <h3>Adventure Works</h3>
+                            <div class="tech-stack"><span>Power BI</span></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-modern">
         <div class="container">
-            <h2>Contact Me</h2>
-
-            <form action="">
-                <input type="text" name="fname" id="" placeholder="Full Name" required>
-                <input type="email" name="email" id="">
-                <label for="gender">Gender</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="gender" id="">Male</label>
-                    <label><input type="radio" name="gender" id="">Female</label>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-details">
+                        <div class="info-box"><i class="fas fa-envelope"></i><div><span>Email</span><p>saikarthik2601@gmail.com</p></div></div>
+                    </div>
                 </div>
-                <label for="">Interested In:</label>
-                <select>
-                    <option>Web Development <option>
-                    <option>FronEnd Role</option>
-                    <option>Internship</option>
-                </select>
-                <label>
-                    <input type="checkbox"> Subscribe to Updates
-                </label>
-                <textarea name="" id="">Your Message</textarea>
-                <button type="submit">Send Message</button>
-            </form>
-
+                <div class="contact-form-container">
+                    <form class="main-form">
+                        <div class="from-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 SaiKarthik | Portfolio</p>
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">SK <span>.</span></a>
+                    <p>Building high-quality web experiences.</p>
+                </div>
+                <div class="footer-social">
+                    <div class="social-icon">
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-github"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SaiKarthik</p>
+                <a href="#" class="back-to-top">Back to top</a>
+            </div>
+        </div>
     </footer>
-    
+
 </body>
 </html>
